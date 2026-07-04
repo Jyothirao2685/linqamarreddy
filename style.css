@@ -142,15 +142,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 0;
   z-index: 100;
   transition: var(--transition);
-  background: rgba(11, 12, 16, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.01);
 }
 .navbar.scrolled {
-  background: rgba(11, 12, 16, 0.1) !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
+  background: #0b0c10 !important;
   padding: 0.8rem 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4) !important;
 }
