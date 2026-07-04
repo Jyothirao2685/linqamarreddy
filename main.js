@@ -1,8 +1,4 @@
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
-
+// GSAP is loaded via CDN in index.html
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Navbar scroll effect
   const navbar = document.getElementById('navbar');
