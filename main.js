@@ -188,6 +188,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 5b. Carousel Logic
+  const carouselTrack = document.querySelector('.carousel-track');
+  const prevBtn = document.getElementById('carousel-prev');
+  const nextBtn = document.getElementById('carousel-next');
+  if (carouselTrack && prevBtn && nextBtn) {
+    prevBtn.addEventListener('click', () => {
+      carouselTrack.scrollBy({ left: -carouselTrack.clientWidth * 0.6, behavior: 'smooth' });
+    });
+    nextBtn.addEventListener('click', () => {
+      carouselTrack.scrollBy({ left: carouselTrack.clientWidth * 0.6, behavior: 'smooth' });
+    });
+  }
+
   // 6. Hamburger Menu Logic
   const hamburgerBtn = document.getElementById("hamburgerBtn");
   const navLinks = document.getElementById("navLinks");

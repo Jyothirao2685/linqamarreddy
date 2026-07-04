@@ -29,7 +29,7 @@
           <a href="#contact">Contact</a>
         </div>
         <div class="nav-actions" style="display: flex; align-items: center; gap: 1rem; justify-self: end;">
-          <a href="https://wa.me/919640644555" target="_blank" class="btn phone-btn" style="justify-self: auto;">
+          <a href="https://wa.me/919640644555?text=Hi%2C%20I%20am%20enquiring%20about%20Linq" target="_blank" class="btn phone-btn" style="justify-self: auto;">
             <i data-feather="phone" class="icon-sm"></i> <span class="phone-text">+91 96406 44555</span>
           </a>
           <button class="hamburger" id="hamburgerBtn" aria-label="Menu" style="background: transparent; border: none; color: white; display: none; cursor: pointer;">
@@ -115,14 +115,14 @@
                 
                 <h4 class="list-heading">Interior Amenities</h4>
                 <ul class="bullet-list mb-5 interactive-amenities">
-                  <li class="amenity-item active" data-img="/src/assets/32_PILATES.webp">Pilates Studio</li>
-                  <li class="amenity-item" data-img="/src/assets/34_KARAOKE.webp">Karaoke Music Lounge</li>
-                  <li class="amenity-item" data-img="/src/assets/35_DIGITAL DEN FINAL.webp">Digital Den Room</li>
-                  <li class="amenity-item" data-img="/src/assets/36_PRIVATE PARTY SPACE DECK.webp">Private Party Deck</li>
-                  <li class="amenity-item" data-img="/src/assets/41_STARGAZING.webp">Stargazing Deck</li>
+                  <li class="amenity-item active" data-img="/src/assets/32_PILATES.webp"><span>Pilates Studio</span> <i data-feather="arrow-right"></i></li>
+                  <li class="amenity-item" data-img="/src/assets/34_KARAOKE.webp"><span>Karaoke Music Lounge</span> <i data-feather="arrow-right"></i></li>
+                  <li class="amenity-item" data-img="/src/assets/35_DIGITAL DEN FINAL.webp"><span>Digital Den Room</span> <i data-feather="arrow-right"></i></li>
+                  <li class="amenity-item" data-img="/src/assets/36_PRIVATE PARTY SPACE DECK.webp"><span>Private Party Deck</span> <i data-feather="arrow-right"></i></li>
+                  <li class="amenity-item" data-img="/src/assets/41_STARGAZING.webp"><span>Stargazing Deck</span> <i data-feather="arrow-right"></i></li>
                 </ul>
 
-                <a href="https://wa.me/919640644555" target="_blank" class="btn btn-yellow-solid">Download Brochure</a>
+                <a href="https://wa.me/919640644555?text=Hi%2C%20I%20am%20enquiring%20about%20Linq" target="_blank" class="btn btn-yellow-solid">Download Brochure</a>
               </div>
               <div class="image-content">
                 <img src="/src/assets/32_PILATES.webp" id="interior-img" alt="Interior Amenities Render" class="rounded-img shadow-lg" onerror="this.src='https://via.placeholder.com/800x600?text=Interior+Image'"/>
@@ -137,14 +137,14 @@
                 
                 <h4 class="list-heading">Exterior Amenities</h4>
                 <ul class="bullet-list mb-5 interactive-amenities">
-                  <li class="amenity-item active" data-img="/src/assets/13_CLUBHOUSE.webp">Clubhouse</li>
-                  <li class="amenity-item" data-img="/src/assets/09_AMPHI DAY MEDITATION VIEW.webp">Amphitheatre Day Meditation</li>
-                  <li class="amenity-item" data-img="/src/assets/10_AMPHI CITY VIEW.webp">Amphitheatre City View</li>
-                  <li class="amenity-item" data-img="/src/assets/02_FACADE MID AERIAL VIEW.webp">Facade Mid Aerial View</li>
-                  <li class="amenity-item" data-img="/src/assets/06_MID LEVEL CLOSEUP VIEW.webp">Mid Level Closeup View</li>
+                  <li class="amenity-item active" data-img="/src/assets/13_CLUBHOUSE.webp"><span>Clubhouse</span> <i data-feather="arrow-right"></i></li>
+                  <li class="amenity-item" data-img="/src/assets/09_AMPHI DAY MEDITATION VIEW.webp"><span>Amphitheatre Day Meditation</span> <i data-feather="arrow-right"></i></li>
+                  <li class="amenity-item" data-img="/src/assets/10_AMPHI CITY VIEW.webp"><span>Amphitheatre City View</span> <i data-feather="arrow-right"></i></li>
+                  <li class="amenity-item" data-img="/src/assets/02_FACADE MID AERIAL VIEW.webp"><span>Facade Mid Aerial View</span> <i data-feather="arrow-right"></i></li>
+                  <li class="amenity-item" data-img="/src/assets/06_MID LEVEL CLOSEUP VIEW.webp"><span>Mid Level Closeup View</span> <i data-feather="arrow-right"></i></li>
                 </ul>
 
-                <a href="https://wa.me/919640644555" target="_blank" class="btn btn-yellow-solid">Download Brochure</a>
+                <a href="https://wa.me/919640644555?text=Hi%2C%20I%20am%20enquiring%20about%20Linq" target="_blank" class="btn btn-yellow-solid">Download Brochure</a>
               </div>
               <div class="image-content">
                 <img src="/src/assets/13_CLUBHOUSE.webp" id="exterior-img" alt="Exterior Amenities Render" class="rounded-img shadow-lg" onerror="this.src='https://via.placeholder.com/800x600?text=Exterior+Image'"/>
@@ -166,7 +166,7 @@
         
         <div class="pdf-container mt-4" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); height: 80vh; max-height: 800px; width: 100%; background: #f8f9fa;">
           <!-- Using a placeholder PDF until the real one is provided -->
-          <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" width="100%" height="100%" style="border: none;">
+          <iframe src="/src/assets/floor-plans.pdf" width="100%" height="100%" style="border: none;">
             This browser does not support PDFs. Please download the PDF to view it.
           </iframe>
         </div>
@@ -183,7 +183,8 @@
         </h2>
         
         <!-- Simplified Carousel view -->
-        <div class="carousel-container mt-5">
+        <div class="carousel-container mt-5" style="position: relative;">
+          <button id="carousel-prev" class="carousel-btn prev-btn"><i data-feather="chevron-left"></i></button>
           <div class="carousel-track">
             <div class="carousel-slide">
               <img src="/src/assets/13_CLUBHOUSE.webp" alt="Clubhouse" class="carousel-img" onerror="this.src='https://via.placeholder.com/600x400'"/>
@@ -201,6 +202,7 @@
               <img src="/src/assets/36_PRIVATE PARTY SPACE DECK.webp" alt="Party Deck" class="carousel-img" onerror="this.src='https://via.placeholder.com/600x400'"/>
             </div>
           </div>
+          <button id="carousel-next" class="carousel-btn next-btn"><i data-feather="chevron-right"></i></button>
           <div class="carousel-dots mt-4">
             <span class="dot active"></span>
             <span class="dot"></span>
@@ -220,7 +222,7 @@
       <div class="container cta-content text-center">
         <h3 class="yellow-italic-text mb-3">Ready to Experience Elevated Living?</h3>
         <h2 class="section-title text-white mb-5 mx-auto" style="max-width: 700px; font-size: 2.5rem;">Step into a home crafted for comfort, style, and modern living. Your dream space is just one click away.</h2>
-        <a href="https://wa.me/919640644555" target="_blank" class="btn btn-white-solid">Book a Site Visit</a>
+        <a href="https://wa.me/919640644555?text=Hi%2C%20I%20am%20enquiring%20about%20Linq" target="_blank" class="btn btn-white-solid">Book a Site Visit</a>
       </div>
     </section>
 
@@ -259,7 +261,7 @@
             <h4 class="footer-heading">Need Help?</h4>
             <ul class="footer-links">
               <li><a href="tel:+919640644555">Call Us Back: +91 96406 44555</a></li>
-              <li><a href="https://wa.me/919640644555" target="_blank">Message Us (WhatsApp)</a></li>
+              <li><a href="https://wa.me/919640644555?text=Hi%2C%20I%20am%20enquiring%20about%20Linq" target="_blank">Message Us (WhatsApp)</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -272,13 +274,13 @@
           <div class="footer-col" id="contact">
             <h4 class="footer-heading">Get in Touch</h4>
             <p class="footer-text mb-2">Our Sales Executives are here to help. Reach out to them at contact details.</p>
-            <p class="footer-text"><a href="https://wa.me/919640644555" target="_blank" class="text-white">+91 96406 44555</a></p>
+            <p class="footer-text"><a href="https://wa.me/919640644555?text=Hi%2C%20I%20am%20enquiring%20about%20Linq" target="_blank" class="text-white">+91 96406 44555</a></p>
             <a href="https://maps.app.goo.gl/JYvGerWZZPawwxa37?g_st=ic" target="_blank" class="btn btn-yellow-solid mt-3" style="padding: 0.5rem 1rem; font-size: 0.85rem;">View on Google Maps</a>
           </div>
         </div>
         
         <div class="footer-bottom">
-          <p>DSR Authorised sales partner, all rights reserved Amar Reddy, Rera Number A02400004068</p>
+          
           <div class="social-links">
             <a href="https://x.com/hydflats?s=11" target="_blank"><i data-feather="twitter"></i></a>
             <a href="https://www.instagram.com/realestateexcellence__?utm_source=qr" target="_blank"><i data-feather="instagram"></i></a>
@@ -301,6 +303,6 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script type="module" src="./main.js?v=4"></script>
+    <script type="module" src="./main.js?v=10"></script>
   </body>
 </html>

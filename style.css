@@ -385,14 +385,30 @@ h1, h2, h3, h4, h5, h6 {
 .amenity-item {
   cursor: pointer;
   transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.6;
 }
 .amenity-item:hover {
   color: var(--yellow);
-  opacity: 0.8;
+  opacity: 1;
 }
 .amenity-item.active {
   color: var(--yellow);
   font-weight: 600;
+  opacity: 1;
+}
+.amenity-item svg {
+  width: 18px;
+  height: 18px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: var(--transition);
+}
+.amenity-item.active svg, .amenity-item:hover svg {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .bullet-list {
@@ -439,8 +455,34 @@ h1, h2, h3, h4, h5, h6 {
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   padding-bottom: 1rem;
+  scroll-behavior: smooth;
 }
-.carousel-track::-webkit-scrollbar { display: none; }
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: var(--transition);
+}
+.carousel-btn:hover {
+  background: #fff;
+  transform: translateY(-50%) scale(1.1);
+}
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
 .carousel-slide {
   min-width: 60%;
   scroll-snap-align: center;
