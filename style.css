@@ -683,6 +683,10 @@ h1, h2, h3, h4, h5, h6 {
 .close-modal:hover {
   color: var(--yellow);
 }
+.zoomable {
+  cursor: pointer;
+  transition: var(--transition);
+}
 .zoomable:hover {
   transform: scale(1.02);
 }
