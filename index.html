@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-width=1.0" />
+    <title>Linq by Raghava | Kokapet's Next Luxury Landmark</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Using Playfair Display for Serifs and Inter for Sans-Serifs -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Feather icons for UI elements -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="logo-group">
+          <img src="/src/assets/dsrlogo.png" alt="DSR Logo" class="logo-img" style="max-height: 60px;" onerror="this.src='https://via.placeholder.com/150x80?text=DSR+CIEL'"/>
+        </div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About us</a>
+          <a href="#highlights">Highlights</a>
+          <a href="#amenities">Amenities</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-actions" style="display: flex; align-items: center; gap: 1rem; justify-self: end;">
+          <a href="https://wa.me/919640644555" target="_blank" class="btn phone-btn" style="justify-self: auto;">
+            <i data-feather="phone" class="icon-sm"></i> <span class="phone-text">+91 96406 44555</span>
+          </a>
+          <button class="hamburger" id="hamburgerBtn" aria-label="Menu" style="background: transparent; border: none; color: white; display: none; cursor: pointer;">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+      <!-- Background Image -->
+      <div class="hero-bg" style="background-image: url('/src/assets/hero%20image.png');"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-center">
+        <span class="yellow-label tracking-widest">KOKAPET'S NEXT LUXURY LANDMARK</span>
+        <h1 class="main-heading">LINQ BY RAGHAVA</h1>
+        <p class="hero-description mx-auto">Just beside Neopolis, Kokapet, with breathtaking Gandipet Lake Views opp CBIT/MGIT.</p>
+      </div>
+    </header>
+
+
+
+    <!-- Section 2: Highlights -->
+    <section id="highlights" class="section section-white pt-0">
+      <div class="container">
+        <div class="dark-card">
+          <div class="dark-card-split">
+            <div class="card-img-wrapper">
+              <img src="/src/assets/hero.png" alt="Highlights Render" class="card-img" onerror="this.src='https://via.placeholder.com/800x600?text=Highlights+Image'"/>
+            </div>
+            <div class="card-grid">
+              <div class="grid-item">
+                <i data-feather="map" class="grid-icon"></i>
+                <span class="grid-text">10 Acres Premium Development</span>
+              </div>
+              <div class="grid-item">
+                <i data-feather="layers" class="grid-icon"></i>
+                <span class="grid-text">4 Iconic Residential Towers</span>
+              </div>
+              <div class="grid-item">
+                <i data-feather="maximize" class="grid-icon"></i>
+                <span class="grid-text">3 BHK 1,780 – 2,380 Sq.Ft.</span>
+              </div>
+              <div class="grid-item">
+                <i data-feather="star" class="grid-icon"></i>
+                <span class="grid-text">5.5 Lakh Sq.Ft. Clubhouse</span>
+              </div>
+              <div class="grid-item">
+                <i data-feather="arrow-up" class="grid-icon"></i>
+                <span class="grid-text">Sky Bridges on 44th & 45th Floors</span>
+              </div>
+              <div class="grid-item">
+                <i data-feather="sun" class="grid-icon"></i>
+                <span class="grid-text">270° Premium Lake-Facing Views</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Apartments -->
+    <section id="apartments" class="section section-white bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title text-dark">Premium Amenities in<br>Linq by Raghava</h2>
+        </div>
+        
+        <div class="tabs-header justify-center mb-5">
+          <button class="tab-btn-pill active" data-target="tab-interior">Interior Amenities</button>
+          <button class="tab-btn-pill" data-target="tab-exterior">Exterior Amenities</button>
+        </div>
+
+        <div class="tabs-content">
+          <div class="tab-pane active" id="tab-interior">
+            <div class="split-layout align-center">
+              <div class="text-content">
+                <p class="mb-4">Designed to cater to every aspect of your lifestyle, ensuring unparalleled comfort and luxury.</p>
+                
+                <h4 class="list-heading">Interior Amenities</h4>
+                <ul class="bullet-list mb-5 interactive-amenities">
+                  <li class="amenity-item active" data-img="/src/assets/hero.png">Pilates Studio</li>
+                  <li class="amenity-item" data-img="/src/assets/hero image.png">Karaoke Music Lounge</li>
+                  <li class="amenity-item" data-img="/src/assets/buildingimage.png">Digital Den Room</li>
+                  <li class="amenity-item" data-img="https://via.placeholder.com/800x600?text=Private+Party+Deck">Private Party Deck</li>
+                  <li class="amenity-item" data-img="https://via.placeholder.com/800x600?text=Stargazing+Deck">Stargazing Deck</li>
+                </ul>
+
+                <a href="https://wa.me/919640644555" target="_blank" class="btn btn-yellow-solid">Download Brochure</a>
+              </div>
+              <div class="image-content">
+                <img src="/src/assets/hero.png" id="interior-img" alt="Interior Amenities Render" class="rounded-img shadow-lg" onerror="this.src='https://via.placeholder.com/800x600?text=Interior+Image'"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="tab-exterior">
+            <div class="split-layout align-center">
+              <div class="text-content">
+                <p class="mb-4">Experience serene outdoor spaces designed for relaxation, community engagement, and breathtaking views.</p>
+                
+                <h4 class="list-heading">Exterior Amenities</h4>
+                <ul class="bullet-list mb-5 interactive-amenities">
+                  <li class="amenity-item active" data-img="/src/assets/hero image.png">Pilates Studio</li>
+                  <li class="amenity-item" data-img="/src/assets/hero.png">Karaoke Music Lounge</li>
+                  <li class="amenity-item" data-img="/src/assets/buildingimage.png">Digital Den Room</li>
+                  <li class="amenity-item" data-img="https://via.placeholder.com/800x600?text=Private+Party+Deck">Private Party Deck</li>
+                  <li class="amenity-item" data-img="https://via.placeholder.com/800x600?text=Stargazing+Deck">Stargazing Deck</li>
+                </ul>
+
+                <a href="https://wa.me/919640644555" target="_blank" class="btn btn-yellow-solid">Download Brochure</a>
+              </div>
+              <div class="image-content">
+                <img src="/src/assets/hero%20image.png" id="exterior-img" alt="Exterior Amenities Render" class="rounded-img shadow-lg" onerror="this.src='https://via.placeholder.com/800x600?text=Exterior+Image'"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Floor Plans & Site Plan -->
+    <section id="floorplans" class="section section-white bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h5 class="yellow-text tracking-wide mb-3">Layouts</h5>
+          <h2 class="section-title text-dark">Master & Floor Plans</h2>
+          <p class="section-desc mx-auto" style="max-width: 700px;">Click on any plan to view it in full scale high resolution.</p>
+        </div>
+        
+        <div class="pdf-container mt-4" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); height: 80vh; max-height: 800px; width: 100%; background: #f8f9fa;">
+          <!-- Using a placeholder PDF until the real one is provided -->
+          <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" width="100%" height="100%" style="border: none;">
+            This browser does not support PDFs. Please download the PDF to view it.
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Amenities Carousel -->
+    <section id="amenities" class="section section-white text-center">
+      <div class="container">
+        <h5 class="yellow-text tracking-wide mb-3">Amenities</h5>
+        <h2 class="section-title text-dark mx-auto" style="max-width: 800px;">
+          Redefining urban living with expansive green spaces and world-class facilities.
+        </h2>
+        
+        <!-- Simplified Carousel view -->
+        <div class="carousel-container mt-5">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <img src="/src/assets/hero image.png" alt="Amenity 1" class="carousel-img" onerror="this.src='https://via.placeholder.com/600x400'"/>
+            </div>
+            <div class="carousel-slide">
+              <img src="/src/assets/hero.png" alt="Amenity 2" class="carousel-img" onerror="this.src='https://via.placeholder.com/600x400'"/>
+            </div>
+            <div class="carousel-slide">
+              <img src="/src/assets/buildingimage.png" alt="Amenity 3" class="carousel-img" style="object-position: center 30%;" onerror="this.src='https://via.placeholder.com/600x400'"/>
+            </div>
+          </div>
+          <div class="carousel-dots mt-4">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: CTA Parallax -->
+    <section class="cta-section">
+      <!-- Changed from amarreddy.png (logo) to the generated parallax image or hero image -->
+      <div class="cta-bg" style="background-image: url('/parallax.png');"></div>
+      <div class="cta-overlay"></div>
+      <div class="container cta-content text-center">
+        <h3 class="yellow-italic-text mb-3">Ready to Experience Elevated Living?</h3>
+        <h2 class="section-title text-white mb-5 mx-auto" style="max-width: 700px; font-size: 2.5rem;">Step into a home crafted for comfort, style, and modern living. Your dream space is just one click away.</h2>
+        <a href="https://wa.me/919640644555" target="_blank" class="btn btn-white-solid">Book a Site Visit</a>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="location" class="section section-white pb-0">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title text-dark">Location</h2>
+          <p>Find us at our premium location.</p>
+        </div>
+        <div class="map-container" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); height: 450px;">
+          <!-- Embed Google Maps -->
+          <iframe 
+            src="https://www.google.com/maps?q=98RF+QQQ+LINQ+by+Raghava,+Kokapet,+Hyderabad,+Narsingi,+Telangana+500075&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <img src="/src/assets/dsrlogo.png" alt="DSR Logo" class="mb-3" style="max-height: 60px;" onerror="this.src='https://via.placeholder.com/150x50?text=DSR+CIEL'"/>
+            <p class="footer-text mb-3">Linq by Raghava: Kokapet's Next Luxury Landmark. Premium residential community in Hyderabad.</p>
+            <p class="footer-text mb-4">Kokapet, Hyderabad, India.</p>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Need Help?</h4>
+            <ul class="footer-links">
+              <li><a href="tel:+919640644555">Call Us Back: +91 96406 44555</a></li>
+              <li><a href="https://wa.me/919640644555" target="_blank">Message Us (WhatsApp)</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Learn More</h4>
+            <ul class="footer-links">
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#floorplans">Floor Plans</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col" id="contact">
+            <h4 class="footer-heading">Get in Touch</h4>
+            <p class="footer-text mb-2">Our Sales Executives are here to help. Reach out to them at contact details.</p>
+            <p class="footer-text"><a href="https://wa.me/919640644555" target="_blank" class="text-white">+91 96406 44555</a></p>
+            <a href="https://maps.app.goo.gl/JYvGerWZZPawwxa37?g_st=ic" target="_blank" class="btn btn-yellow-solid mt-3" style="padding: 0.5rem 1rem; font-size: 0.85rem;">View on Google Maps</a>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>DSR Authorised sales partner, all rights reserved Amar Reddy, Rera Number A02400004068</p>
+          <div class="social-links">
+            <a href="https://x.com/hydflats?s=11" target="_blank"><i data-feather="twitter"></i></a>
+            <a href="https://www.instagram.com/realestateexcellence__?utm_source=qr" target="_blank"><i data-feather="instagram"></i></a>
+            <a href="https://youtube.com/@realestate.excellence?si=2oV4CyNrNluvXrhW" target="_blank"><i data-feather="youtube"></i></a>
+            <a href="https://www.linkedin.com/in/amarendra-sunkireddy-08011a6a?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios" target="_blank"><i data-feather="linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- Initialize icons -->
+    <script>
+      feather.replace()
+    </script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
