@@ -145,9 +145,9 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0, 0, 0, 0.01);
 }
 .navbar.scrolled {
-  background: #0b0c10;
+  background: #0b0c10 !important;
   padding: 0.8rem 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4) !important;
 }
 
 .nav-container {
