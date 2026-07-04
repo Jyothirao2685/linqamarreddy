@@ -91,6 +91,9 @@
               </div>
             </div>
           </div>
+          <div class="mt-5 text-center">
+            <a href="https://wa.me/919640644555?text=Hi%2C%20I%20am%20enquiring%20about%20Linq%20highlights" target="_blank" class="btn btn-yellow-solid">Get Pricing on WhatsApp</a>
+          </div>
         </div>
       </div>
     </section>
@@ -165,10 +168,12 @@
         </div>
         
         <div class="pdf-container mt-4">
-          <!-- Using a placeholder PDF until the real one is provided -->
-          <iframe src="https://drive.google.com/file/d/1K0iiaSoTKkv29w5IMgGvxyPO7avCCD9F/preview" width="100%" height="100%" style="border: none;">
+          <iframe src="./src/assets/floor-plans.pdf" width="100%" height="100%" style="border: none;" title="Floor Plans">
             This browser does not support PDFs. Please download the PDF to view it.
           </iframe>
+        </div>
+        <div class="text-center mt-5">
+          <a href="https://wa.me/919640644555?text=Hi%2C%20I%20am%20enquiring%20about%20Linq%20floor%20plans" target="_blank" class="btn btn-yellow-solid">Request Floor Plans on WhatsApp</a>
         </div>
 
       </div>
@@ -294,7 +299,23 @@
     <!-- Image Modal -->
     <div id="imageModal" class="image-modal">
       <span class="close-modal">&times;</span>
-      <img class="modal-content" id="modalImg">
+      <button class="modal-nav prev-img" id="modalPrev"><i data-feather="chevron-left"></i></button>
+      <div class="modal-content-wrapper">
+        <img class="modal-content" id="modalImg">
+      </div>
+      <button class="modal-nav next-img" id="modalNext"><i data-feather="chevron-right"></i></button>
+    </div>
+
+    <!-- Timed Popup -->
+    <div id="timedPopup" class="timed-popup">
+      <div class="popup-inner">
+        <button class="close-popup" id="closePopup">&times;</button>
+        <h3 class="yellow-text mb-2">Interested in Linq?</h3>
+        <p class="text-white mb-4" style="opacity: 0.9;">Get the complete brochure, floor plans, and pricing details instantly on WhatsApp.</p>
+        <a href="https://wa.me/919640644555?text=Hi%2C%20I%20am%20enquiring%20about%20Linq" target="_blank" class="btn btn-yellow-solid w-100" style="display: block;">
+          WhatsApp Us Now
+        </a>
+      </div>
     </div>
 
     <!-- Initialize icons -->

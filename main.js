@@ -107,11 +107,13 @@ document.addEventListener('DOMContentLoaded', () => {
     );
   });
 
-  // 5. Image Modal (Lightbox with Zoom & Pan)
+  // 5. Image Modal (Lightbox with Gallery, Zoom & Pan)
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImg");
   const closeBtn = document.querySelector(".close-modal");
   const zoomableImages = document.querySelectorAll(".zoomable");
+  const modalPrev = document.getElementById("modalPrev");
+  const modalNext = document.getElementById("modalNext");
 
   if (modal && modalImg && closeBtn) {
     let scale = 1;
@@ -120,22 +122,38 @@ document.addEventListener('DOMContentLoaded', () => {
     let isDragging = false;
     let startX = 0;
     let startY = 0;
+    let currentImageIndex = 0;
+    const imagesArray = Array.from(zoomableImages);
 
     const updateTransform = () => {
       modalImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
     };
 
-    zoomableImages.forEach(img => {
+    const showModalImage = (index) => {
+      currentImageIndex = index;
+      scale = 1;
+      translateX = 0;
+      translateY = 0;
+      modalImg.style.transform = ''; 
+      modalImg.classList.remove("no-transition");
+      modalImg.src = imagesArray[currentImageIndex].src;
+    };
+
+    imagesArray.forEach((img, index) => {
       img.addEventListener("click", () => {
-        scale = 1;
-        translateX = 0;
-        translateY = 0;
-        modalImg.style.transform = ''; 
-        modalImg.classList.remove("no-transition");
-        
         modal.classList.add("show");
-        modalImg.src = img.src; 
+        showModalImage(index);
       });
+    });
+
+    if (modalPrev) modalPrev.addEventListener("click", () => {
+      currentImageIndex = (currentImageIndex > 0) ? currentImageIndex - 1 : imagesArray.length - 1;
+      showModalImage(currentImageIndex);
+    });
+
+    if (modalNext) modalNext.addEventListener("click", () => {
+      currentImageIndex = (currentImageIndex < imagesArray.length - 1) ? currentImageIndex + 1 : 0;
+      showModalImage(currentImageIndex);
     });
 
     const closeModal = () => {
@@ -217,3 +235,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+  // 7. Timed Popup Logic
+  const timedPopup = document.getElementById('timedPopup');
+  const closePopupBtn = document.getElementById('closePopup');
+  if(timedPopup && closePopupBtn) {
+    setTimeout(() => {
+      if(!localStorage.getItem('linqPopupShown')) {
+        timedPopup.classList.add('show');
+        localStorage.setItem('linqPopupShown', 'true');
+      }
+    }, 15000); // 15 seconds
+    closePopupBtn.addEventListener('click', () => {
+      timedPopup.classList.remove('show');
+    });
+  }
