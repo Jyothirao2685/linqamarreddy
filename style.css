@@ -741,3 +741,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .pb-5 { padding-bottom: 3rem !important; }
 .pt-3 { padding-top: 1rem !important; }
+
+/* Floating WhatsApp Button */
+.floating-whatsapp { position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); z-index: 1000; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.floating-whatsapp:hover { transform: scale(1.1); box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4); }
