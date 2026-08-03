@@ -1,0 +1,11 @@
+# Linq by Raghava | Kokapet's Next Luxury Landmark
+This is the official landing page for Linq by Raghava | Kokapet's Next Luxury Landmark.
+The site is built using HTML, CSS, and vanilla JavaScript (with GSAP for animations).
+It is fully responsive and optimized for mobile devices.
+
+# Content Structure
+- Hero Section
+- Project Overview
+- Amenities & Features
+- Location & Connectivity
+- Contact / Lead Generation Footer
